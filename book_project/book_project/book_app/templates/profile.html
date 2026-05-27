@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Profile Page</h1>
+<h2>User name is:{{name}}</h2>
+<h2>User email: {{email}}</h2>
+{% if role == "admin" %}
+<h1>This is admin portal</h1>
+{% endif %}
+<table border="1">
+    <th> NAME </th>
+    <th> EMAIL </th>
+    {% for data in user_data %}
+    <tr>
+    <td>{{data.name}}</td>
+    <td>{{data.email}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+</body>
+</html>

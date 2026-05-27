@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is Home page</h1>
+<a href="http://127.0.0.1:8000/book/contact">Contact Page</a>
+{% for data in names %}
+<h1>Name {{ forloop.counter }}:{{data.name}}</h1>
+{% endfor %}
+
+</body>
+</html>
